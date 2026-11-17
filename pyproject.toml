@@ -1,0 +1,26 @@
+[project]
+name = "cliente-multimedia"
+version = "0.1.0"
+description = "Cliente multimedia tipo Steam Big Picture para NUC, modo TV con YouTube"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "PyQt6>=6.6.0",
+    "python-vlc>=3.0.20123",
+    "yt-dlp>=2024.1.1",
+    "requests>=2.31.0",
+    "toml>=0.10.2",
+]
+
+# Nota: google-api-python-client se descarta por decision de arquitectura:
+# se usan metadatos via yt-dlp (sin API key).
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+packages = ["src"]
+
+[tool.uv]
+# UV sincronizara este archivo y generara uv.lock automaticamente

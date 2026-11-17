@@ -1,0 +1,59 @@
+[app]
+name = "Cliente Multimedia"
+version = "0.1.0"
+language = "es"
+start_fullscreen = false
+start_maximized = true
+
+[home]
+show_app_launcher = true
+selected_app = "youtube"
+sections = [ "tendencias", "suscripciones", "historial", "favoritos",]
+
+[ui]
+theme = "dark"
+font_size = 24
+button_min_height = 80
+big_thumb_scale = 0.6
+show_titles = true
+hide_cursor_seconds = 5
+
+[input]
+primary = "mouse"
+virtual_keyboard = false
+support_touch = true
+
+[youtube]
+mode = "stream"
+autoplay_next = true
+max_results = 20
+default_region = "ES"
+default_language = "es"
+
+[feed]
+autostart = true
+preload_radius = 3
+
+[playback]
+engine = "vlc"
+volume = 80
+sponsorblock = true
+sponsorblock_categories = [ "sponsor", "selfpromo", "interaction",]
+skip_youtube_ads = true
+mono_audio = false             # Unificar audio a mono (altavoz unico / sonido irregular)
+
+[vlc]
+install_path = ""
+
+[autostart]
+enabled = false
+mode = "startup_folder"
+
+[storage]
+cache_dir = "./cache"
+history_file = "./data/history.json"
+favorites_file = "./data/favorites.json"
+
+[youtube.auth]
+enabled = true
+browser = "edge"

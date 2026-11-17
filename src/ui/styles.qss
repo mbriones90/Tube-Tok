@@ -1,0 +1,274 @@
+/* ============ Cliente Multimedia - Tema 10-foot (TV) ============ */
+
+QWidget {
+    background-color: #121212;
+    color: #eeeeee;
+    font-size: 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ---------- Barra superior ---------- */
+#topBar {
+    background-color: #0d0d0d;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+#topTitle {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#topButton {
+    background-color: #1f1f1f;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 8px 18px;
+    min-height: 48px;
+    font-size: 20px;
+}
+#topButton:hover { background-color: #2c2c2c; border-color: #555; }
+#topButton:pressed { background-color: #383838; }
+
+/* ---------- Launcher de apps ---------- */
+#appLauncher {
+    background-color: #171717;
+    border-bottom: 1px solid #262626;
+}
+
+#appTile {
+    background-color: #1e1e1e;
+    border: 2px solid #333;
+    border-radius: 14px;
+    min-width: 150px;
+    min-height: 130px;
+}
+#appTile:hover { border-color: #e62117; background-color: #262626; }
+#appTile[disabled="true"] {
+    opacity: 0.35;
+}
+
+#appIcon {
+    font-size: 46px;
+}
+
+/* ---------- Secciones grandes (visor tipo Steam) ---------- */
+#bigShelf {
+    border: 3px solid transparent;
+    border-radius: 16px;
+}
+#bigShelf[active="true"] {
+    border-color: #e62117;
+    background-color: #181818;
+}
+
+#sectionTitle {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 6px 0;
+}
+
+#positionLabel {
+    color: #888;
+    font-size: 22px;
+    padding-right: 8px;
+}
+
+#bigThumb {
+    background-color: #0a0a0a;
+    border-radius: 12px;
+    color: #555;
+    font-size: 22px;
+}
+
+#bigTitle {
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    padding: 0 80px;
+}
+
+#bigMeta {
+    color: #999;
+    font-size: 20px;
+}
+
+#navArrow {
+    background-color: #1f1f1f;
+    border: 2px solid #3a3a3a;
+    border-radius: 12px;
+    font-size: 42px;
+    color: #ddd;
+}
+#navArrow:hover { background-color: #2c2c2c; border-color: #e62117; }
+#navArrow:disabled { opacity: 0.25; }
+
+#shelfStatus {
+    color: #999;
+    font-size: 22px;
+    padding: 30px;
+}
+
+/* ---------- Cards de video ---------- */
+#videoCard {
+    background-color: #1a1a1a;
+    border: 2px solid transparent;
+    border-radius: 12px;
+}
+#videoCard:hover {
+    border-color: #e62117;
+    background-color: #202020;
+}
+
+#thumb {
+    background-color: #0a0a0a;
+    border-radius: 8px;
+    color: #666;
+    font-size: 18px;
+}
+
+#cardTitle {
+    font-size: 19px;
+    font-weight: 600;
+    color: #f0f0f0;
+}
+
+#cardMeta {
+    color: #999;
+    font-size: 17px;
+}
+
+#favButton {
+    background-color: transparent;
+    border: none;
+    font-size: 26px;
+    color: #888;
+}
+#favButton:hover { color: #ffd54f; }
+
+/* ---------- Busqueda ---------- */
+#searchInput {
+    background-color: #1e1e1e;
+    border: 2px solid #3a3a3a;
+    border-radius: 10px;
+    padding: 8px 18px;
+    font-size: 24px;
+    color: #fff;
+}
+#searchInput:focus { border-color: #e62117; }
+
+QPushButton {
+    background-color: #1f1f1f;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 10px 20px;
+    min-height: 48px;
+    font-size: 20px;
+}
+QPushButton:hover { background-color: #2c2c2c; border-color: #555; }
+QPushButton:pressed { background-color: #383838; }
+QPushButton:disabled { opacity: 0.4; }
+
+/* ---------- Teclado virtual ---------- */
+QPushButton[vk="true"] {
+    min-height: 64px;
+    font-size: 24px;
+    background-color: #232323;
+    border-radius: 8px;
+}
+
+/* ---------- Reproductor ---------- */
+#videoSurface {
+    background-color: #000;
+}
+
+#playerControls {
+    background-color: #0d0d0d;
+    border-top: 1px solid #2a2a2a;
+}
+
+#playerInfo {
+    color: #bbb;
+    font-size: 22px;
+    padding: 6px;
+    background-color: #0d0d0d;
+}
+
+#roundButton {
+    border-radius: 32px;
+    font-size: 26px;
+    background-color: #e62117;
+    border: none;
+    color: white;
+}
+#roundButton:hover { background-color: #ff2d20; }
+
+#timeLabel {
+    color: #ccc;
+    font-size: 18px;
+    min-width: 140px;
+}
+
+QSlider::groove:horizontal {
+    height: 8px;
+    background: #333;
+    border-radius: 4px;
+}
+QSlider::handle:horizontal {
+    width: 26px;
+    height: 26px;
+    margin: -9px 0;
+    border-radius: 13px;
+    background: #e62117;
+}
+QSlider::sub-page:horizontal { background: #e62117; border-radius: 4px; }
+
+/* ---------- Ajustes ---------- */
+#pageTitle {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+QCheckBox {
+    font-size: 22px;
+    spacing: 12px;
+}
+QCheckBox::indicator {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: 2px solid #555;
+    background: #1e1e1e;
+}
+QCheckBox::indicator:checked {
+    background: #e62117;
+    border-color: #e62117;
+}
+
+QComboBox {
+    background: #1e1e1e;
+    border: 2px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 8px 14px;
+    min-height: 44px;
+    font-size: 20px;
+}
+
+#settingsNote {
+    color: #888;
+    font-size: 17px;
+    padding-left: 30px;
+}
+
+/* ---------- Scrollbars ---------- */
+QScrollBar:vertical {
+    width: 14px;
+    background: transparent;
+}
+QScrollBar::handle:vertical {
+    background: #444;
+    border-radius: 7px;
+    min-height: 40px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
+
+QMessageBox { background-color: #1a1a1a; }

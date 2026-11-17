@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Entorno UV (el lock se sube para reproducibilidad)
+# uv.lock se INCLUYE a proposito
+
+# Datos personales del usuario (historial, favoritos): NUNCA subir
+data/
+cache/
+
+# Archivos generados en runtime
+*.log
+
+# IDE / SO
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Scripts temporales de debug
+debug_*.py
+test_*.py
+out*.txt
+err.txt
+smoke_out*.txt
